@@ -59,55 +59,69 @@ Coding to convert D.O.B to Age (intager)
 ---
 
 # **Cleaned Dataset**
-![Identify amount of fruad vs no-fruadulant data, Imbalanced Dataset](Images/data%20percentage.PNG)[^11] Approx 0.5% of fruad transaction in dataset
+![Identify amount of fruad vs no-fruadulant data, Imbalanced Dataset](Images/data%20percentage.PNG)[^11] 
+Approx 0.5% of fruad transaction in dataset
 
 ![Cleaned Dataset](Images/Cleaned%20dataset.PNG)[^12] Dataset to use for training machine model
 
 ---
 
-# **Encoding Dataset**
-![Encoding Dataset](Images/encode%20prep.png)[^13] Encode cleaned dataset
 
-![Output of Encoded Dataset](Images/encoded%20output.PNG)[^14] Output of Encode cleaned dataset
+# **Encoding Dataset**
+![Encoding Dataset](Images/encode%20prep.png)[^13] 
+Encode cleaned dataset
+
+![Output of Encoded Dataset](Images/encoded%20output.PNG)[^14] 
+Output of Encode cleaned dataset
 
 ---
 
 # **Spliting dataset**
-![Spliting dataset](Images/Spliting%20dataset.PNG)[^15] Using a fraction of cleaned dataset
+![Spliting dataset](Images/Spliting%20dataset.PNG)[^15] 
+Using a fraction of cleaned dataset
 
 ---
 
 # **Normalize Dataset**
-![Normalize Dataset](Images/Normalize%20split%20dataset.PNG)[^16] Normalize to train machine model
+![Normalize Dataset](Images/Normalize%20split%20dataset.PNG)[^16] 
+Normalize to train machine model
 
 ---
 # **First Machine Model: Logistic Regression Imbalanced Dataset**
-![Logistic Regrssion](Images/Logistic%20Regression%20Imbalanced.PNG)[^17] Imbalanced Dataset through Logistic Regression Machine Model. 100% Non-frudulant prediction, 42% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
+![Logistic Regrssion](Images/Logistic%20Regression%20Imbalanced.PNG)[^17] 
+Imbalanced Dataset through Logistic Regression Machine Model. 100% Non-frudulant prediction, 42% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
 
 ---
 # **Second Machine Model: KNeighboursClassifier Imbalanced Dataset**
-![KNeighboursClassifier](Images/KneighbourClassfier%20Imbal%3Banced.PNG)[^18] Imbalanced Dataset through KNeighboursClassifier Machine Model. 99% Non-frudulant prediction, 0% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
+![KNeighboursClassifier](Images/KneighbourClassfier%20Imbal%3Banced.PNG)[^18] 
+Imbalanced Dataset through KNeighboursClassifier Machine Model. 99% Non-frudulant prediction, 0% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
 
 ---
 # **Third Machine Model: LGBClassifier Imbalanced Dataset**
-![LGBClassifier](Images/LGBMClassifier.PNG)[^19] Imbalanced Dataset through LGBClassifier Machine Model. 99% Non-frudulant prediction, 43% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
+![LGBClassifier](Images/LGBMClassifier.PNG)[^19] 
+Imbalanced Dataset through LGBClassifier Machine Model. 99% Non-frudulant prediction, 43% frudulant prediction. Average total 99% accurate machine model, biased to non-frudulant transaction prediction
 
 ---
 # **Balance is Key!!**
-![Balance Dataset](Images/Balancing%20dataset.PNG)[^20] Apply Random under-sampling to balance biased dataset
+![Balance Dataset](Images/Balancing%20dataset.PNG)[^20] 
+Apply Random under-sampling to balance biased dataset
 
-![Output of Balance Dataset](Images/balanced%20output.PNG)[^21] Output of balanced Dataset
+![Output of Balance Dataset](Images/balanced%20output.PNG)[^21] 
+Output of balanced Dataset
 
 ---
 # **Preparing for Machine Learning**
-![Standarize and normalize balanced datset](Images/Balanced%20dataset%20prep.PNG)[^22] Spliting and normalize balanced dataset
+![Standarize and normalize balanced datset](Images/Balanced%20dataset%20prep.PNG)[^22] 
+Spliting and normalize balanced dataset
 
 ---
 # **First Machine Learning Regression, Balanced Dataset**
-![Balanced dataset through Learning Regression](Images/Logistic%20regression%20balanced.PNG)[^23] Balanced Dataset through Logistic Regression Machine Model. 73% Non-frudulant prediction, 60% frudulant prediction. Average total 67% accurate machine model of fradulant transaction
+![Balanced dataset through Learning Regression](Images/Logistic%20regression%20balanced.PNG)[^23] 
+Balanced Dataset through Logistic Regression Machine Model. 73% Non-frudulant prediction, 60% frudulant prediction. Average total 67% accurate machine model of fradulant transaction
 
 # **Second Machine Learning Regression, Balanced Dataset**
-![Balanced dataset through LGBClassifier](Images/LGBMClassifier%20balanced%20dataset.PNG)[^23] Balanced Dataset through LBGClassifier Machine Model. 74% Non-frudulant prediction, 62% frudulant prediction. Average total 68% accurate machine model of fradulant transaction
+![Balanced dataset through LGBClassifier](Images/LGBMClassifier%20balanced%20dataset.PNG)[^23] 
+Balanced Dataset through LBGClassifier Machine Model. 74% Non-frudulant prediction, 62% frudulant prediction. Average total 68% accurate machine model of fradulant transaction
  
 
 [^1]: machine-learning https://intotomorrow.com/how-machine-learning-can-help-credit-card-fraud-detection/
