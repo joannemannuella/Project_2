@@ -56,7 +56,7 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 
 ![Correlating Data](Images/heatmap.png)
 
-[^8] Using a heatmap shows correlation between columns. The columns that didn't correlate is dropped along with "Unnamed: 0" & "unix_time" presenting negative vaules. 
+[^8] Using a heatmap shows correlation between columns. The columns that didn't correlate is dropped along with "Unnamed: 0" presenting negative vaules. 
 
 ![Dropping Data](Images/dropping%20columns.PNG)
 
@@ -141,13 +141,45 @@ Coding to convert D.O.B to Age (intager)
 # **First Machine Learning Regression, Balanced Dataset**
 ![Balanced dataset through Learning Regression](Images/Logistic%20regression%20balanced.PNG)
 
-[^23] Balanced Dataset through Logistic Regression Machine Model. 73% Non-frudulant prediction, 60% frudulant prediction. Average total 67% accurate machine model of fradulant transaction
+[^23] Balanced Dataset through Logistic Regression Machine Model. 75% Non-frudulant prediction, 64% frudulant prediction. Average total 69% accurate machine model of fradulant transaction
 
-# **Second Machine Learning Regression, Balanced Dataset**
+# **Second Machine LGBMClassifier, Balanced Dataset**
 ![Balanced dataset through LGBClassifier](Images/LGBMClassifier%20balanced%20dataset.PNG)
 
-[^24] Balanced Dataset through LBGClassifier Machine Model. 74% Non-frudulant prediction, 62% frudulant prediction. Average total 68% accurate machine model of fradulant transaction
- 
+[^24] Balanced Dataset through LBGClassifier Machine Model. 79% Non-frudulant prediction, 68% frudulant prediction. Average total 74% accurate machine model of fradulant transaction
+
+ ---
+# **To conclude** 
+
+**This Machine** is able to predict fradulant credit card transaction to 74% accuracy, it has been trained with good data only. Meaning bad data has been removed via human logic and column correlation analysis.
+
+At first the data was left unbalanced and fitted to three different machine learning models, all three indicated biased prediction to the majority of the data being non-fradulant, as expected.
+
+The machine needed to be trained with balanced data. Using the previous supervised machine learning - Logistics regression. This popular model predicts binary event occuring i.e. fradulant, non-fradulant. It is used for predicting the categorical dependent variable using a given set of independent variables. Achieving a total average of 69% accuracy predicting fradulant transactions.
+
+The second machine learning model LGBM Classifier out performed Logistical regression by 5% fianilsing at 74% total average. "Light GBM is a gradient boosting framework that uses tree based learning algorithm. It grows tree vertically while other algorithm grows trees horizontally meaning that Light GBM grows tree leaf-wise while other algorithm grows level-wise. Leaf-wise algorithm can reduce more loss than a level-wise algorithm.
+
+**WHY USE LGB?**
+
+It is ‘Light’ because of its high speed. It can handle large data, requires low memory to run and focuses on accuracy of results. Also supports GPU learning and thus data scientists/ Kagglers are widely using LGBM for data science application development.
+
+TIPS & TRICKS
+
+The algorithm easily overfits and thus, should not be used with small (< 10K rows) datasets.
+Deal with overfitting using these parameters:
+Small Maximum Depth
+Large Minimum Data in a Leaf
+Small Feature and Bagging Fraction
+Improve the training speed
+Small Bagging Fraction
+Early Stopping Round
+Use small learning_rate with large num_iterations for better accuracy
+Ideally, the value of num_leaves should be less than or equal to 2^(max_depth). Value more than this will result in overfitting
+If you have a big enough dataset, use this algorithm at least once. It’s accuracy has challenged other boosting algorithms"[^25]
+
+![Logic Regression vs LGBClassifier](Images/LGBM%20v%20Logic.PNG)
+
+[^26] Mljar.com has tested many machine learning models against one another. We focused on Binary classificaiton between LGBM Classification vs Linear logistic regression model. LGBM classification is better 16:3 against Logistic regression. 
 
 [^1]: machine-learning https://intotomorrow.com/how-machine-learning-can-help-credit-card-fraud-detection/
 
@@ -171,7 +203,7 @@ Coding to convert D.O.B to Age (intager)
 
 [^9]: Removing Garbage Data, ***Own Code***
 
-[^10]: Coding to convert D.O.B to Age,  ***Own Code***
+[^10]: Coding to convert D.O.B to Age,  3.3 Converting dob to age, https://github.com/sharmasapna/credit-card-fraud-detection/blob/main/credit-card-fraud-detection.ipynb
 
 [^11]: Imbalanced Dataset. Approx 0.5% of fruad transaction in dataset, ***Own Code***
 
@@ -197,6 +229,10 @@ Coding to convert D.O.B to Age (intager)
 
 [^22]: Spliting and normalize balanced dataset, ***Own Code***
 
-[^23]: Balanced Dataset through Logistic Regression Machine Model. 73% Non-frudulant prediction, 60% frudulant prediction. Average total 67% accurate machine model of fradulant transaction, ***Own Code***
+[^23]: Balanced Dataset through Logistic Regression Machine Model. 75% Non-frudulant prediction, 64% frudulant prediction. Average total 69% accurate machine model of fradulant transaction, ***Own Code***
 
-[^24]: Balanced Dataset through LBGClassifier Machine Model. 74% Non-frudulant prediction, 62% frudulant prediction. Average total 68% accurate machine model of fradulant transaction, ***Own Code***
+[^24]: Balanced Dataset through LBGClassifier Machine Model. 79% Non-frudulant prediction, 68% frudulant prediction. Average total 74% accurate machine model of fradulant transaction, ***Own Code***
+
+[^25]: Light Gradient Boosting Method, https://www.kaggle.com/code/krithi07/logistic-to-lightgbm-for-beginners/notebook
+
+[^26]: Lightgbm vs Linear, https://mljar.com/machine-learning/lightgbm-vs-linear/
