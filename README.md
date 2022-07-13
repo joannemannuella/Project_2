@@ -174,23 +174,28 @@ Logistic regression is one of the most popular Machine Learning algorithms, whic
 # **First Machine Learning Regression, Balanced Dataset**
 ![Balanced dataset through Learning Regression](Images/Logistic%20regression%20balanced.PNG)
 
-[^23] Balanced Dataset through Logistic Regression Machine Model. 75% Non-fraudulent prediction, 64% fraudulent prediction. Average total 69% accurate machine model of fraudulent transaction
+[^23] This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed improvement of the prediction of 1(fraudulent) from 0.42(42%) to 0.64 (64%) which is our main goal of developing this Machine Learning.
 
-# **Second Machine LGBMClassifier, Balanced Dataset**
+# **Second Machine KNeighboursClassifier, Balanced Dataset**
+![Balanced dataset through LGBClassifier](Images/KneighbourClassfier%20baLanced.PNG)
+
+[^C] This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed improvement of the prediction of 1(fraudulent) from 0%(0%) to 0.57 (57%) which is our main goal of developing this Machine Learning .
+
+# **Third Machine LGBMClassifier, Balanced Dataset**
 ![Balanced dataset through LGBClassifier](Images/LGBMClassifier%20balanced%20dataset.PNG)
 
-[^24] Balanced Dataset through LBGClassifier Machine Model. 79% Non-fraudulent prediction, 68% fraudulent prediction. Average total 74% accurate machine model of fraudulent transaction
+[^24] This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed an improvement of the prediction of 1(fraudulent) from 0.43%(43%) to 0.66 (66%) which is our main goal of developing this Machine Learning.
 
  ---
 # **To conclude** 
 
-**This Machine** is able to predict fraudulent credit card transaction to 74% accuracy, it has been trained with good data only. Meaning bad data has been removed via human logic and column correlation analysis.
+**This Machine** is able to predict fraudulent credit card transaction to 72% accuracy, it has been trained with good data only. Meaning bad data has been removed via human logic and column correlation analysis.
 
 At first the data was left unbalanced and fitted to three different machine learning models, all three indicated biased prediction to the majority of the data being non-fraudulent, as expected.
 
 The machine needed to be trained with balanced data. Using the previous supervised machine learning - Logistics regression. This popular model predicts binary event occuring i.e. fraudulent, non-fraudulent. It is used for predicting the categorical dependent variable using a given set of independent variables. Achieving a total average of 69% accuracy predicting fraudulent transactions.
 
-The second machine learning model LGBM Classifier out performed Logistical regression by 5% fianilsing at 74% total average. "Light GBM is a gradient boosting framework that uses tree based learning algorithm. It grows tree vertically while other algorithm grows trees horizontally meaning that Light GBM grows tree leaf-wise while other algorithm grows level-wise. Leaf-wise algorithm can reduce more loss than a level-wise algorithm.
+The third machine learning model LGBM Classifier out performed Logistical regression by 1% fianilsing at 72% total average. "Light GBM is a gradient boosting framework that uses tree based learning algorithm. It grows tree vertically while other algorithm grows trees horizontally meaning that Light GBM grows tree leaf-wise while other algorithm grows level-wise. Leaf-wise algorithm can reduce more loss than a level-wise algorithm.
 
 **WHY USE LGB?**
 
@@ -270,10 +275,12 @@ If you have a big enough dataset, use this algorithm at least once. It’s accur
 
 [^22]: Spliting and normalize balanced dataset, ***Own Code***
 
-[^23]: Balanced Dataset through Logistic Regression Machine Model. 75% Non-frudulant prediction, 64% frudulant prediction. Average total 69% accurate machine model of fradulant transaction, ***Own Code***
+[^23]: This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed improvement of the prediction of 1(fraudulent) from 0.42(42%) to 0.64 (64%) which is our main goal of developing this Machine Learning. ***Own Code***
 
-[^24]: Balanced Dataset through LBGClassifier Machine Model. 79% Non-frudulant prediction, 68% frudulant prediction. Average total 74% accurate machine model of fradulant transaction, ***Own Code***
+[^24]:This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed an improvement of the prediction of 1(fraudulent) from 0.43%(43%) to 0.66 (66%) which is our main goal of developing this Machine Learning. ***Own Code***
 
 [^25]: Light Gradient Boosting Method, https://www.kaggle.com/code/krithi07/logistic-to-lightgbm-for-beginners/notebook
 
 [^26]: Lightgbm vs Linear, https://mljar.com/machine-learning/lightgbm-vs-linear/
+
+[^C]: This model show although the average accuracy and prediction is less compared to imbalanced data, but it showed improvement of the prediction of 1(fraudulent) from 0%(0%) to 0.57 (57%) which is our main goal of developing this Machine Learning. ***OwnCode***
