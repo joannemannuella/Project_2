@@ -61,7 +61,9 @@ This was generated using Sparkov Data Generation | Github tool created by Brando
 # **Anaylsis & Clean the Dataset**
 ### ****Garbage in Garbage out, your analysis is as good as your data****
 
+
 ****Data Cleaning Process and Data Preperation****
+
 ![Cleaning Data](Images/data%20slice.PNG)
 
 ![SLicing Data](Images/slicing%20sytax.PNG)
@@ -91,6 +93,13 @@ The third column customer card number .
 We will dropped "first name" and "last name" dropped.
 
 Transaction number is it really necessary?  we also think it won't be really needed.
+
+
+
+![missingno](Images/missingno.PNG)
+
+
+Using missingno function to plot that current columns doesn't have missing value. 
 
 
 ![Using a function to convert D.O.B to Age (integer)](Images/DOB%20conversion.PNG)
